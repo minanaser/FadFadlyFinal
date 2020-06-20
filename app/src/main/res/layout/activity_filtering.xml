@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filtering">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:text="@string/help"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+
+                android:id="@+id/radios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:inputType="text"
+                app:layout_constraintTop_toBottomOf="@+id/text"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/sel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/sel"
+                    android:textColor="@color/black"
+                    android:textSize="20dip"
+                    android:gravity="right"/>
+
+                <RadioButton
+                    android:id="@+id/second"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/fam"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="right"/>
+
+                <RadioButton
+                    android:id="@+id/third"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/fri"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="right" />
+                <RadioButton
+                    android:id="@+id/fourth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/em"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="right" />
+                <RadioButton
+                    android:id="@+id/fifth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/wo"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="right" />
+                <RadioButton
+                    android:id="@+id/six"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/lo"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="right" />
+                <RadioButton
+                    android:id="@+id/seven"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:button="@null"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/ge"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="right" />
+            </RadioGroup>
+
+           <!-- <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radios"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                 android:onClick="onfil"
+                android:paddingStart="70dp"
+                android:paddingEnd="70dp"
+                android:text="@string/Next"
+
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/rounded_button"
+
+                />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

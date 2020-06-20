@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Fadfadly</string>
+    <string name="Login">تسجيل الدخول</string>
+    <string name="Username">اسم المستخدم</string>
+    <string name="password">كلمه السر</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="Loading">تحميل</string>
+    <string name="Signup">إنشاء حساب</string>
+    <string name="age">العمر</string>
+    <string name="back">إلي الخلف</string>
+    <string name="gender">الجنس</string>
+    <string name="لا">لا</string>
+    <string name="ربما">ربما</string>
+    <string name="نعم">نعم</string>
+    <string name="single">أعزب</string>
+    <string name="Married">متزوج او مرتبط</string>
+    <string name="self1">هل التعامل مع الأخرين والذين لا تعرفهم صعب؟</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="self2">هل انت راض عن ما تفعله في حياتك؟</string>
+    <string name="self3">هل تتقبل عيوبك؟</string>
+    <string name="self4">هل أهدافك واضحة؟</string>
+    <string name="self5">هل ترى نفسك أفضل من الأخرين؟</string>
+
+    <string name="family1">هل تحب والديك ومرتبط بهم؟</string>
+    <string name="family2">هل تحب أخوتك ومرتبط بهم؟</string>
+    <string name="family3">هل تحب قضاء الوقت مع العائلة؟</string>
+
+    <string name="friends1">هل تحب اصدقائك؟</string>
+    <string name="friends2">هل تفضل اصدقائك الجدد عن القدامي؟</string>
+    <string name="friends3">هل لديك صديق مقرب او اكثر؟</string>
+    <string name="friends4">هل تصارح أحدهم بكل شيء؟</string>
+    <string name="friends5">هل تصارح أصدقائك عندما يزعجوك؟</string>
+    <string name="friends6">هل تشعر أن أصدقاءك يفهمونك؟</string>
+    <string name="friends7">هل تفضل قضاء الوقت مع اصدقائك؟</string>
+
+    <string name="singleOٌrMarOut">هل انت اعزب ام متزوج او مرتبط؟</string>
+
+    <string name="SingleloveOut">هل تحب أحدهم؟</string>
+
+    <string name="single1">هل قمت بمصارحه من تحب؟</string>
+    <string name="single2">هل تشعر بأنه الشخص المنشود؟</string>
+    <string name="single3">هل تتقبل فكرة عدم ارتباطكما؟</string>
+    <string name="single4">هل انت قادر علي تجاوز هذا الشعور بمفردك؟</string>
+
+    <string name="SingleTwoCases">هل تؤمن بأن لكل شخص توأمه الروحي؟</string>
+    <string name="SingleTwoCases2">هل أنت شغوف للارتباط وتفكر فيه مرارا؟</string>
+
+
+    <string name="married1">هل تحب شريك حياتك؟</string>
+    <string name="married2">هل هو الشخص الوحيد بحياتك؟</string>
+    <string name="married3">هل تصارح شريك حياتك بكل شيء؟ </string>
+    <string name="married4">هل تشعر بأنه الشخص المنشود؟ </string>
+    <string name="married5">هل انتم مرتبطين ومتفاهمين مع بعضكما؟</string>
+    <string name="married6">هل تتقبل عيوبه؟</string>
+
+    <string name="work1">هل تحب مجالك؟</string>
+    <string name="work2">هل تقيم مستواك في الدراسة أو العمل علي انه ممتاز؟</string>
+    <string name="work3">هل ترغب في تحسين مستواك سواء في الدراسة او في العمل؟ </string>
+    <string name="work4">الرغبة في التفوق تجعلك تحت ضغط دائم وتعب نفسي؟</string>
+    <string name="work5">هل ترغب بالتفوق لنفسك فقط؟</string>
+
+    <string name="loss1">هل فقدت أحد المقربين منك حديثا؟</string>
+    <string name="loss2">هل انت قادر علي التعامل مع الحزن؟</string>
+    <string name="loss3">هل يؤثر عليك؟</string>
+    <string name="loss4">هل يؤثر علي  أداءك؟</string>
+    <string name="loss5">هل من الصعب تجاوز الامر؟</string>
+
+    <string name="general1">هل تشعر بالوحدة؟</string>
+    <string name="general2">هل تشعر بالحزن؟</string>
+    <string name="general3">هل انت تائه في حياتك ؟</string>
+    <string name="general4">هل يوجد من يرشدك في حياتك وتطلب منه النصح؟</string>
+    <string name="generaal5">هل فكرت في الذهاب لطبيب نفسي من قبل؟</string>
+    <string name="general6">هل تتأثر بالسلبية المحيطة سريعا ؟</string>
+    <string name="general7">هل تستطيع التعامل مع المشكلات بنجاح؟ </string>
+    <string name="general8">هل تستسلم سريعا؟</string>
+    <string name="generalpressure">هل أنت تحت ضغط باستمرار؟ </string>
+    <string name="pressure1">هل حاولت علاجه او تغييره؟</string>
+    <string name="pressure2">هل حاولت تقبله؟  </string>
+    <string name="now">شكرا. الان يمكنك ان  تختار من بين الاطباء المناسبون لحالتك</string>
+    <string name="Next">التالي</string>
+    <string name="help"> تشعر أنك تحتاج المساعده في اي جزء من الأجزاء الاتيه</string>
+    <string name="sel">لا تستطيع ان تحب نفسك</string>
+    <string name="emot">عائليا</string>
+    <string name="fam">عائليا</string>
+    <string name="fri">لديك مشكله مع أصدقائك</string>
+    <string name="em">عاطفيا</string>
+    <string name="wo">دراسيا أو عمليا</string>
+    <string name="lo">تفتقد أشخاص تحبهم</string>
+    <string name="ge">شعورك العام ليس جيد</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثي</string>
+    <string name="submit">تسجيل</string>
+    <string name="Address">العنوان</string>
+    <string name="Bachelor">المؤهل الجامعي</string>
+    <string name="national">الرقم القومي</string>
+    <string name="forget">نسيت كلمة السر</string>
+    <string name="forg">استرجاع كلمة السر</string>
+    <string name="recover">استرجاع</string>
+    <string name="signasdoctor">  إنشاء حساب كطبيب</string>
+    <string name="sinasDoc">إذا كنت طبيب</string>
+    <string name="special">التخصص</string>
+    <string name="ggeneral">الشعور العام</string>
+    <string name="lloss">الفقدان</string>
+    <string name="wwork">الدراسه او العمل</string>
+    <string name="eemo">عاطفيا</string>
+    <string name="ffriends">الاصدقاء</string>
+    <string name="ffamilyy">الاصدقاء</string>
+    <string name="sself">نفسك</string>
+    <string name="fبfamilyy">عائليا</string>
+    <string name="title_activity_transaction_">Transaction_Activity</string>
+</resources>
