@@ -58,9 +58,9 @@ public class AdapterPatients extends RecyclerView.Adapter<AdapterPatients.MyHold
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,ChatActivity.class);
-              //  intent.putExtra("hisUid", hisUid);
+               // intent.putExtra("hisUid", hisUid);
                 userID =hisUid;
-                context.startActivity(intent);
+               context.startActivity(intent);
 
             }
         });

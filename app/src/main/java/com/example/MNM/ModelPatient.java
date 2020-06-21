@@ -4,26 +4,26 @@ public class ModelPatient {
      String name;
      String email;
      String image;
-     String paientID;
+     String uid;
 
 
     public ModelPatient(){
 
     }
 
-    public ModelPatient(String name, String email, String image, String paientID) {
+    public ModelPatient(String name, String email, String image, String uid) {
         this.name = name;
         this.email = email;
         this.image = image;
-        this.paientID = paientID;
+        this.uid = uid;
     }
 
     public String getPaientID() {
-        return paientID;
+        return uid;
     }
 
-    public void setPaientID(String paientID) {
-        this.paientID = paientID;
+    public void setPaientID(String uid) {
+        this.uid = uid;
     }
 
 

@@ -41,13 +41,15 @@ public class patientsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
-        modelPatientList =new ArrayList<>();
+
         // Inflate the layout for this fragment
          View view = inflater.inflate(R.layout.fragment_patients, container, false);
          recyclerView = view.findViewById(R.id.patient_fragment_recyclerView);
          recyclerView.setHasFixedSize(true);
          recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-         adapterPatients = new AdapterPatients(view.getContext(),modelPatientList);
+        modelPatientList =new ArrayList<>();
+          readUsers();
+        /* adapterPatients = new AdapterPatients(view.getContext(),modelPatientList);
          recyclerView.setAdapter(adapterPatients);
          databaseReference = FirebaseDatabase.getInstance().getReference("user");
          databaseReference.addValueEventListener(new ValueEventListener() {
@@ -67,8 +69,37 @@ public class patientsFragment extends Fragment {
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        });
+        });*/
          return view;
+    }
+
+    private void readUsers() {
+      final  FirebaseUser fuser = firebaseAuth.getInstance().getCurrentUser();
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("user");
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                modelPatientList.clear();
+                for(DataSnapshot ds: dataSnapshot.getChildren()){
+                    ModelPatient modelUser = ds.getValue(ModelPatient.class);
+                      assert modelUser!=null;
+                      assert fuser!=null;
+                    if(!modelUser.getPaientID().equals(fuser.getUid())){
+                        modelPatientList.add(modelUser);
+                    }
+
+                    adapterPatients = new AdapterPatients(getContext(),modelPatientList);
+
+                    recyclerView.setAdapter(adapterPatients);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
     }
 
   /*  private void getAllPatient() {

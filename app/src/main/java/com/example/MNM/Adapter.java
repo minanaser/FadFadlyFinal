@@ -54,6 +54,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.HolderData> {
                 Intent intent = new Intent(context,ChatPatient.class);
                 //  intent.putExtra("hisUid", hisUid);
                 doctorID=hisUID;
+
                 context.startActivity(intent);
 
             }
