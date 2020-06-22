@@ -47,7 +47,7 @@ public class ChatPatient extends AppCompatActivity {
     DatabaseReference userRefForSeen;
 
     List<ModelChat> chatList= new ArrayList<>();
-    AdapterChat adapterChat;
+    AdapterChatPatient adapterChatPatient;
 
 
     String hisUid = Adapter.doctorID;
@@ -143,7 +143,7 @@ public class ChatPatient extends AppCompatActivity {
 
 
     private void seenMessage() {
-        userRefForSeen = FirebaseDatabase.getInstance().getReference("ChatsPatient");
+        userRefForSeen = FirebaseDatabase.getInstance().getReference("Chats");
         seenListener = userRefForSeen.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -166,7 +166,7 @@ public class ChatPatient extends AppCompatActivity {
 
     private void readMessages() {
         // chatList = new ArrayList<>();
-        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("ChatsPatient");
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("Chats");
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -182,11 +182,11 @@ public class ChatPatient extends AppCompatActivity {
                         chatList.add(chat);
 
                     }
-                    adapterChat = new AdapterChat(ChatPatient.this,chatList,hisImage);
-                    adapterChat.notifyDataSetChanged();
+                    adapterChatPatient = new AdapterChatPatient(ChatPatient.this,chatList,hisImage);
+                    adapterChatPatient.notifyDataSetChanged();
 
 
-                    recyclerView.setAdapter(adapterChat);
+                    recyclerView.setAdapter(adapterChatPatient);
 
                 }
             }
@@ -211,7 +211,7 @@ public class ChatPatient extends AppCompatActivity {
         hashMap.put("message", message);
         hashMap.put("timestamp", timestamp);
         hashMap.put("isSeen", false);
-        databaseReference.child("ChatsPatient").push().setValue(hashMap);
+        databaseReference.child("Chats").push().setValue(hashMap);
 
         //reset edittext after sending message
         massageEt.setText("");

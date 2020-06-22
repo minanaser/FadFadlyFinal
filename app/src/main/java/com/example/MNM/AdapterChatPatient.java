@@ -16,23 +16,25 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
-import java.util.zip.DataFormatException;
 
-public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder> {
-
+public class AdapterChatPatient extends RecyclerView.Adapter<AdapterChatPatient.MyHolder> {
     private static final int MSG_TYPE_LEfT = 0;
     private static final int MSG_TYPE_RIGHT = 1;
     Context context;
-   List<ModelChat> chatList;
+    List<ModelChat> chatList;
     String imageUr1;
     FirebaseUser fUser;
 
 
-    public AdapterChat(Context context, List<ModelChat> chatList, String imageUr1) {
+
+
+
+
+
+    public AdapterChatPatient(Context context, List<ModelChat> chatList, String imageUr1) {
         this.context = context;
         this.chatList = chatList;
         this.imageUr1 = imageUr1;
@@ -40,14 +42,14 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder> {
 
     @NonNull
     @Override
-    public MyHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int postion) {
+    public AdapterChatPatient.MyHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int postion) {
         if(postion==MSG_TYPE_RIGHT){
             View view = LayoutInflater.from(context).inflate(R.layout.row_chat_right,viewGroup,false);
-            return new MyHolder(view);
+            return new AdapterChatPatient.MyHolder(view);
         }
         else{
             View view = LayoutInflater.from(context).inflate(R.layout.row_chat_left,viewGroup,false);
-            return new MyHolder(view);
+            return new AdapterChatPatient.MyHolder(view);
         }
     }
 
@@ -84,6 +86,7 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder> {
         }*/
     }
 
+
     @Override
     public int getItemCount() {
         if(chatList==null)
@@ -98,7 +101,7 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder> {
         Log.i("chatlist",chatList.get(position).getSender()+"starthelp");
         Log.i("chatlis2t",fUser.getUid()+"secondhelp");
 
-      if( chatList.get(position).getSender().equals(fUser.getUid()) ){
+        if( chatList.get(position).getSender().equals(fUser.getUid()) ){
             return MSG_TYPE_RIGHT;
         }
         else{
@@ -121,3 +124,4 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder> {
         }
     }
 }
+
